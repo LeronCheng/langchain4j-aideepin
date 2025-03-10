@@ -26,9 +26,9 @@ spring:
   mail:
     default-encoding: UTF-8
     protocol: smtps
-    host: your-email-host  # smtp.exmail.qq.com
-    username: your-email-username # xxx@qq.com
-    password: your-email-password
+    host: smtp.qq.com  # smtp.exmail.qq.com
+    username: 10856303@qq.com # xxx@qq.com
+    password: kkudkajhegtybjhg
     port: 465
     properties:
       mail:
@@ -53,7 +53,7 @@ mybatis-plus:
 
 logging:
   file:
-    name: /data/aideepin/logs
+    name: /usr/local/aideepin/logs
 
 adi:
   host: aideepin.com
@@ -65,10 +65,10 @@ adi:
     http-port: 1087
 
 local:
-  files: /data/aideepin/files/
-  images: /data/aideepin/images/
-  watermark-images: /data/aideepin/mark-images/
-  thumbnails: /data/aideepin/thumbnails/
-  watermark-thumbnails: /data/aideepin/watermark-thumbnails/
-  tmp-images: /data/aideepin/tmp_images/
-  chat-memory: /data/aideepin/chat_memory/
+  files: /usr/local/aideepin/files/
+  images: /usr/local/aideepin/images/
+  watermark-images: /usr/local/aideepin/mark-images/
+  thumbnails: /usr/local/aideepin/thumbnails/
+  watermark-thumbnails: /usr/local/aideepin/watermark-thumbnails/
+  tmp-images: /usr/local/aideepin/tmp_images/
+  chat-memory: /usr/local/aideepin/chat_memory/

@@ -10,6 +10,7 @@ import dev.langchain4j.data.document.DocumentSplitter;
 import dev.langchain4j.data.document.splitter.DocumentSplitters;
 import dev.langchain4j.data.segment.TextSegment;
 import dev.langchain4j.model.chat.ChatLanguageModel;
+import dev.langchain4j.model.dashscope.QwenEmbeddingModel;
 import dev.langchain4j.model.embedding.EmbeddingModel;
 import dev.langchain4j.model.embedding.onnx.allminilml6v2.AllMiniLmL6V2EmbeddingModel;
 import dev.langchain4j.model.openai.OpenAiChatModelName;
@@ -38,8 +39,12 @@ public class EmbeddingRAG implements IRAGService {
     }
 
     public void init() {
-        log.info("initEmbeddingModel");
-        embeddingModel = new AllMiniLmL6V2EmbeddingModel();
+        log.info("initQwenEmbeddingModel");
+//        embeddingModel = new AllMiniLmL6V2EmbeddingModel();
+        embeddingModel = QwenEmbeddingModel.builder()
+                .apiKey("sk-82912431076840ad867142fd462345f6")
+                .modelName("text-embedding-v3")
+                .build();
     }
 
     /**

@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://127.0.0.1:5432/aideepin?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&tinyInt1isBit=false&allowMultiQueries=true
+    url: jdbc:postgresql://192.168.50.32:5432/aideepin?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&tinyInt1isBit=false&allowMultiQueries=true
     username: postgres
-    password: 123456
+    password: Cone1234!
     hikari:
       connection-timeout: 10000
       validation-timeout: 3000
@@ -15,10 +15,10 @@ spring:
       read-only: false
   data:
     redis:
-      host: localhost
+      host: 192.168.50.32
       port: 6379
-      password:
-      database: 0
+      password: Cone1234!
+      database: 6
       lettuce:
         pool:
           #连接池最大连接数
@@ -29,7 +29,9 @@ spring:
           max-idle: 5
           #连接池中的最小空闲连接
           min-idle: 1
-
+  mvc:
+    async:
+      request-timeout: 90000
 logging:
   file:
     path: D:/data/aideepin/logs
