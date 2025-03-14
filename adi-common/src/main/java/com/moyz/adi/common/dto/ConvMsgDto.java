@@ -39,6 +39,9 @@ public class ConvMsgDto {
     @Schema(title = "model platform name")
     private String aiModelPlatform;
 
+    @Schema(title = "model name")
+    private String aiModelName;
+
     @Schema(title = "附件地址")
     private List<String> attachmentUrls;
 

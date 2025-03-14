@@ -135,6 +135,8 @@ public class ConversationService extends ServiceImpl<ConversationMapper, Convers
             for (ConvMsgDto convMsgDto : children) {
                 AiModel aiModel = MODEL_ID_TO_OBJ.get(convMsgDto.getAiModelId());
                 convMsgDto.setAiModelPlatform(null == aiModel ? "" : aiModel.getPlatform());
+                convMsgDto.setAiModelName(null == aiModel ? "" : aiModel.getName());
+
             }
             item.setChildren(children);
         });
