@@ -34,7 +34,8 @@ spring:
       request-timeout: 90000
 logging:
   file:
-    path: D:/data/aideepin/logs
+#    path: D:/data/aideepin/logs
+    path: /usr/local/aideepin/logs
   level:
     com.baomidou.mybatisplus: DEBUG
 
@@ -46,11 +47,20 @@ adi:
     host: 127.0.0.1
     http-port: 1087
 
+#local:
+#  files: D:/data/aideepin/files/
+#  images: D:/data/aideepin/images/
+#  watermark-images: D:/data/aideepin/mark-images/
+#  thumbnails: D:/data/aideepin/thumbnails/
+#  watermark-thumbnails: D:/data/aideepin/watermark-thumbnails/
+#  tmp-images: D:/data/aideepin/tmp_images/
+#  chat-memory: D:/data/aideepin/chat_memory/
+
 local:
-  files: D:/data/aideepin/files/
-  images: D:/data/aideepin/images/
-  watermark-images: D:/data/aideepin/mark-images/
-  thumbnails: D:/data/aideepin/thumbnails/
-  watermark-thumbnails: D:/data/aideepin/watermark-thumbnails/
-  tmp-images: D:/data/aideepin/tmp_images/
-  chat-memory: D:/data/aideepin/chat_memory/
+  files: /usr/local/aideepin/files/
+  images: /usr/local/aideepin/images/
+  watermark-images: /usr/local/aideepin/mark-images/
+  thumbnails: /usr/local/aideepin/thumbnails/
+  watermark-thumbnails: /usr/local/aideepin/watermark-thumbnails/
+  tmp-images: /usr/local/aideepin/tmp_images/
+  chat-memory: /usr/local/aideepin/chat_memory/

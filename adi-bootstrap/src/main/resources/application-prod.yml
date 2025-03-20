@@ -1,15 +1,15 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/aideepin?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&tinyInt1isBit=false&allowMultiQueries=true
-    username: your-db-account
-    password: your-db-password
+    url: jdbc:postgresql://192.168.50.32:5432/aideepin?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&tinyInt1isBit=false&allowMultiQueries=true
+    username: postgres
+    password: Cone1234!
   data:
     redis:
-      host: localhost
+      host: 192.168.50.32
       port: 6379
-      password:
-      database: 0
+      password: Cone1234!
+      database: 6
       lettuce:
         pool:
           #连接池最大连接数
